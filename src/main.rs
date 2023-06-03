@@ -137,7 +137,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let access_token = get_access_token(&credentials).await?;
 
     let folder_paths = get_folder_list(&access_token).await?;
-    let emails = vec!["alejandro.miranda.job@gmail.com"];
+    let emails = vec!["email@email.com"];
 
     share_folders(&access_token, &folder_paths, &emails).await?;
     
